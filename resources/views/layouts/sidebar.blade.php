@@ -1,44 +1,39 @@
 @if(Auth::check())
-<aside class="main-sidebar">
+<aside class="main-sidebar" style="background-color:#071a38">
     <section class="sidebar">
-        <div class="user-panel">
-            <div class="pull-left image">
+            <div style="color:#ffffff">
+                    <h3> &nbsp   {{ Auth::user()->name }}</h3>
             </div>
-            <div class="pull-left info">
-               
-                <p>{{ Auth::user()->name }}</p>
-            </div> <br><br>
-        </div>
-
+       
         <ul class="sidebar-menu" data-widget="tree">
             <li>
                 <a href="{{ url('/student') }}">
                     <i class="fa fa-mortar-board"></i>
-                    <span>STUDENTS</span>
+                    <span style="color:#ffffff">STUDENTS</span>
                 </a>
             </li>
                 <li>
                 <a href="{{ url('/course') }}">
                     <i class="fa fa-book"></i>
-                    <span>COURSES</span>
+                    <span style="color:#ffffff" >COURSES</span>
                 </a>
             </li>
             <li>
             <a href="{{ url('/exams') }}">
                 <i class="fa fa-pencil-square-o"></i>
-                <span>BOOK EXAMS</span>
+                <span style="color:#ffffff">BOOK EXAMS</span>
             </a>
         </li>
         <li>
         <a href="{{ url('/lessons') }}">
             <i class="fa fa-automobile"></i>
-            <span>DRIVING LESSONS</span>
+            <span style="color:#ffffff">DRIVING LESSONS</span>
         </a>
         </li>
           <li>
         <a href="{{ url('/fee') }}">
             <i class="fa fa-money"></i>
-            <span>BOOK PAYMENTS</span>
+            <span style="color:#ffffff">BOOK PAYMENTS</span>
         </a>
         </li>
         

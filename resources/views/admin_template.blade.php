@@ -51,9 +51,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 {{ $page_title or "" }}
                 <small>{{ $page_description or null }}</small>
             </h1>
-            
         </section>
-
         <section class="content">
             @yield('content')
         </section>

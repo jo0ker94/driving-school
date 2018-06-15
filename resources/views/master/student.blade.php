@@ -126,6 +126,7 @@
                     <td bgcolor="#999999">STUDENT NAME</td>
                     <td bgcolor="#999999">STUDENT EMAIL</td>
                     <td bgcolor="#999999">PHONE NUMBER</td>
+                    <td bgcolor="#999999">LOCATION</td>
                     <td bgcolor="#999999">COURSE NAME</td>
                     <td bgcolor="#999999">ADMISSION ID</td>
                     <td bgcolor="#999999">ADMISSION DATE</td>
@@ -140,6 +141,7 @@
                        <td>{{$student->studentname}}</td>
                        <td>{{$student->email}}</td>
                        <td>{{$student->phone_no}}</td>
+                       <td>{{$student->location}}</td>
                        <td>{{$student->coursename }}</td>
                        <td>{{$student->admission_no}}</td>
                        <td>{{$student->start_date}}</td>
